@@ -1,11 +1,15 @@
-import React from 'react'
+import React from 'react';
 
-const Navbar = ({icons})=>{
-  return <div className="appbar">
-    <div>
-      
+const Navbar = () => {
+  return (
+    <div className="appbar">
+      <div>
+        <span className="material-icons-round">lunch_dining</span>
+        <div className="logo">AJAGZ</div>
+        <span className="material-icons-round">search</span>
+      </div>
     </div>
-  </div>
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
