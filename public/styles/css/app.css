@@ -1,37 +1,50 @@
 @font-face {
-  font-family: "Reg";
-  src: url("../fonts/ProductSansRegular.ttf")
+  font-family: 'Reg';
+  src: url('../fonts/ProductSansRegular.ttf');
 }
 
 @font-face {
-  font-family: "Itl";
-  src: url("../fonts/ProductSansItalic.ttf");
+  font-family: 'Itl';
+  src: url('../fonts/ProductSansItalic.ttf');
 }
 
 @font-face {
-  font-family: "Bol";
-  src: url("../fonts/ProductSansBold.ttf");
+  font-family: 'Bol';
+  src: url('../fonts/ProductSansBold.ttf');
 }
-
-
 
 *,
 body,
 html {
-  font-family: "Reg", Arial, Helvetica, sans-serif;
+  font-family: 'Reg', Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
 
 em {
-  font-family: "Itl"
+  font-family: 'Itl';
 }
 
 b {
-  font-family: "Bld"
+  font-family: 'Bld';
 }
 
-.app{
+.app {
   height: 100vh;
   width: 100vw;
 }
 
+.appbar {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  background: #7678ed;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.appbar > div {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
