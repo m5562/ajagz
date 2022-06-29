@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Navbar = ({position, chilren}) => {
+const Navbar = ({position, children}) => {
   return (
     <div className={`appbar ${position}bar`}>
       <div>
-        {chidren}
+        {children}
       </div>
     </div>
   );
