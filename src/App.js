@@ -12,6 +12,12 @@ export default function App() {
         <span className="logo">Ajagz</span>
         <span class="material-icons-round">account_circle</span>
       </Navbar>
+      <Navbar position="bottom" tab="true">
+          <span className="material-icons-round">sports_esports</span>
+          <span className="material-icons-round">favorite</span>
+          <span className="material-icons-round">leaderboard</span>
+          <span className="material-icons-round">login</span>
+      </Navbar>
       <Paper>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aperiam
         itaque amet maxime nostrum magnam, sed temporibus delectus ad quae
