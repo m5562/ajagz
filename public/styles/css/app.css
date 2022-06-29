@@ -12,7 +12,10 @@
   font-family: 'Bol';
   src: url('../fonts/ProductSansBold.ttf');
 }
-
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px;
+}
 *,
 body,
 html {
@@ -25,32 +28,90 @@ html {
 }
 
 em {
-  font-family: 'Itl';
+  font-family: 'Itl', Arial, Helvetica, sans-serif;
 }
 
 b {
-  font-family: 'Bld';
+  font-family: 'Bld', Arial, Helvetica, sans-serif;
 }
 
+.fa {
+  padding: 10px;
+}
 .app {
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
+  min-height: 100vh;
+  padding: 50px 0;
 }
 
 .appbar {
-  position: absolute;
   height: 50px;
+  background: #ffffff;
+  position: fixed;
   width: 100%;
-  background: #7678ed;
-  padding: 0 20px;
-  display: flex;
-  align-items: center;
-  color: #eeeeee;
 }
 
-.appbar > div {
+.topbar {
+  top: 0;
+  border-bottom: 1px solid #d0d0d0;
+}
+.bottombar {
+  bottom: 0;
+  border-top: 1px solid #d0d0d0;
+}
+.appbar div {
+  margin: 0 20px;
   display: flex;
+  height: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+/*paper*/
+.paper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/*tab*/
+snap-tabs {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+snap-tabs header {
+  flex-shrink: 0;
+  overflow: auto hidden;
+  scroll-snap-type: x mandatory;
+  outline: #00ff00 dashed;
+}
+
+snap-tabs header nav {
+  display: flex;
+}
+
+snap-tabs header nav a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  outline: #0015ff dashed;
+  color: inherit;
+  white-space: nowrap;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+
+snap-tabs section {
+  block-size: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  overflow: auto hidden;
+  overscroll-behavior-x: contain;
+}
+snap-tabs section article {
+  padding: 10px;
+  overflow-y: auto;
+  scroll-snap-type: x mandatory;
 }
