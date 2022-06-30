@@ -6,7 +6,6 @@ import Paper from './elems/Paper';
 import Bag from './Bag'; //storage component
 
 
-
 export default function App() {
   return (
     <div className="app">
