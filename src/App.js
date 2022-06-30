@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef, useContext } from 'react';
 import Navbar from './comps/Navbar';
 import Paper from './elems/Paper';
 
+
 import Bag from './Bag'; //storage component
 
 export default function App() {

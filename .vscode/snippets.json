@@ -1,0 +1,39 @@
+{
+  "create functional component": {
+    "scope": "javascript,typescript",
+    "prefix": "rfce",
+    "body": [
+      "import React from 'react'",
+      "",
+      "const $1 = () => {",
+      "  return (",
+      "    <div>$2</div>",
+      "  )",
+      "}",
+      "",
+      "export default $1"
+    ]
+  },
+  "import react functions": {
+    "scope": "javascript",
+    "prefix": "impwf",
+    "body": [
+      "import React, { useState, useEffect, useRef } from 'react';",
+      "",
+      "   const $1 = () =>{",
+      "    const [$2, set$2] = useState($3);",
+      "",
+      "    useEffect(() => {",
+      "",
+      "    }, []);",
+      "",
+      "    return (",
+      "    <>",
+      "        <div>$4</div>",
+      "    </>",
+      "    );",
+      "};",
+      "export default $1;"
+    ]
+  }
+}
