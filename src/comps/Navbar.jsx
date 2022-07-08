@@ -1,14 +1,11 @@
 import React from 'react';
 
-const Navbar = ({position, children, tab}) => {
+const Navbar = ({ position, children, tab }) => {
   return (
-    <div className={`appbar ${position}bar`}>
-      <div className={tab?"tabs":"bar"}>
-        {children}
-      </div>
-    </div>
+    <nav className="navbar">
+      {children}
+    </nav>
   );
 };
-
 
 export default Navbar;

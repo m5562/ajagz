@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useContext } from 'react';
+import 'halfmoon';
 import Navbar from './comps/Navbar';
 import Paper from './elems/Paper';
-
 import Bag from './Bag'; //storage component
 
 export default function App() {
@@ -9,7 +9,7 @@ export default function App() {
     <div className="app">
       <Navbar position="top">
         <img src="https://picsum.photos/200/40" alt="" />
-        <span className="material-icons-round">lunch_dining</span>
+        <span className="material-icons-round">drag_indicator</span>
         {/* <span className="material-icons-round">account_circle</span> */}
       </Navbar>
       <Navbar position="bottom" tab="true">
