@@ -25,6 +25,20 @@ html {
   line-height: 1.5rem;
   margin: 0;
   padding: 0;
+  scrollbar-width: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+::-webkit-scrollbar-thumb {
+  width: 0;
+}
+::-ms-thumb {
+  width: 0;
+}
+::-moz-range-thumb {
+  width: 0;
 }
 
 em {
@@ -37,6 +51,11 @@ b {
 
 .fa {
   padding: 10px;
+  cursor: pointer;
+}
+.material-icons-round {
+  padding: 10px;
+  cursor: pointer;
 }
 .app {
   min-height: 100vh;
@@ -65,7 +84,7 @@ b {
   align-items: center;
   justify-content: space-between;
 }
-.appbar .tabs{
+.appbar .tabs {
   height: 100%;
   width: 100%;
   display: flex;

@@ -2,23 +2,21 @@ import React, { useState, useEffect, useRef, useContext } from 'react';
 import Navbar from './comps/Navbar';
 import Paper from './elems/Paper';
 
-
 import Bag from './Bag'; //storage component
-
 
 export default function App() {
   return (
     <div className="app">
       <Navbar position="top">
+        <img src="https://picsum.photos/200/40" alt="" />
         <span className="material-icons-round">lunch_dining</span>
-        <span className="logo">Ajagz</span>
-        <span class="material-icons-round">account_circle</span>
+        {/* <span className="material-icons-round">account_circle</span> */}
       </Navbar>
       <Navbar position="bottom" tab="true">
-          <span className="material-icons-round">sports_esports</span>
-          <span className="material-icons-round">favorite</span>
-          <span className="material-icons-round">leaderboard</span>
-          <span className="material-icons-round">login</span>
+        <span className="material-icons-round">sports_esports</span>
+        <span className="material-icons-round">favorite</span>
+        <span className="material-icons-round">leaderboard</span>
+        <span className="material-icons-round">account_circle</span>
       </Navbar>
       <Paper>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aperiam
