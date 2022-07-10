@@ -1,12 +1,17 @@
 import React, { useState, useEffect, useRef, useContext } from 'react';
-import 'halfmoon';
 import Navbar from './comps/Navbar';
 import Paper from './elems/Paper';
-import Bag from './Bag'; //storage component
+
+//import Bag from './Bag'; //storage component
 
 export default function App() {
   return (
-    <div className="app">
+    <div
+      className="app with-custom-webkit-scrollbars with-custom-css-scrollbars"
+      data-dm-shortcut-enabled="true"
+      data-sidebar-shortcut-enabled="true"
+      data-set-preferred-theme-onload="true"
+    >
       <Navbar position="top">
         <img src="https://picsum.photos/200/40" alt="" />
         <span className="material-icons-round">drag_indicator</span>
@@ -18,6 +23,7 @@ export default function App() {
         <span className="material-icons-round">leaderboard</span>
         <span className="material-icons-round">account_circle</span>
       </Navbar>
+      <sidebar></sidebar>
       <Paper>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aperiam
         itaque amet maxime nostrum magnam, sed temporibus delectus ad quae
