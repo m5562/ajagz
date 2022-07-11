@@ -7,7 +7,7 @@ import Paper from './elems/Paper';
 export default function App() {
   return (
     <div
-      className="app with-custom-webkit-scrollbars with-custom-css-scrollbars"
+      className="app" customscrollbars ={true}
       data-dm-shortcut-enabled="true"
       data-sidebar-shortcut-enabled="true"
       data-set-preferred-theme-onload="true"
